@@ -8,7 +8,7 @@ using TareaSQLite.ViewModel;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace TareaSQLite.View
+namespace TareaSQLite.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class VentasView : ContentPage

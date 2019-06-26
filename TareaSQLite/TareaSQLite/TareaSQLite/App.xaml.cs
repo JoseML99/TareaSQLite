@@ -1,16 +1,18 @@
 ﻿using System;
+using TareaSQLite.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using TareaSQLite.ViewModel;
 
 namespace TareaSQLite
 {
     public partial class App : Application
     {
-        public App()
+        public App(String filename)
         {
             InitializeComponent();
-
-            MainPage = new MainPage();
+            VentasViewModel.Inicializador(filename);
+            MainPage = new VentasView();
         }
 
         protected override void OnStart()
